@@ -28,6 +28,10 @@ echo "Reparando pacotes quebrados durante atualização"
 sudo dpkg --configure -a
 echo ""
 echo ""
+echo "Limpando cache da memória"
+echo 3 > /proc/sys/vm/drop_caches
+echo ""
+echo ""
 clear
 echo "Limpeza concluída"
 sleep 4
