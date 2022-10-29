@@ -4,6 +4,10 @@
 # Limpeza de arquivos inúteis no sistema
 # Por Junior Alves
 
+echo "Atualizando o sistema"
+sudo apt update -y; apt full-upgrade -y
+echo ""
+echo ""
 echo "Limpando a Lixeira"
 sudo rm -rf /home/$USER/.local/share/Trash/files/*
 echo ""
